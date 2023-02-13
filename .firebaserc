@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "wake-up-2beff",
+    "staging": "wake-upp"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# About Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is coded by PiyushDev. <br/> Wake Me, uses built in time function from javascript to get current time. <br/> The GUI is written with Bootstrap V_5.
+
+### The App is live here : https://wake-upp.web.app 
 
 ## Available Scripts
 

@@ -1,0 +1,16 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+
+.wake {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.dropdown-item:hover{
+    background-color: red;
+}

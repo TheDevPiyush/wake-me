@@ -154,7 +154,7 @@ export default class Home extends Component {
                 <div className="my">
                     <h1 className='my-5 text-center wake'>
                         <u>
-                            Wake Up!!
+                            Wake Me!!
                         </u>
                     </h1>
                 </div>

@@ -1,6 +1,6 @@
 # About Project
 
-This app is coded by PiyushDev. <br/> Wake Me, uses built in time function from javascript to get current time. <br/> The GUI is written with Bootstrap V_5.
+This app is coded by PiyushDev. <br/> Wake Me is a simple alarm clock app, coded in React Js, It uses built in time function from javascript to get current time. <br/> The GUI is written with Bootstrap V_5.
 
 ### The App is live here : https://wake-upp.web.app 
 

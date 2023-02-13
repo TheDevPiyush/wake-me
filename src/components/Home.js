@@ -174,7 +174,7 @@ export default class Home extends Component {
                 <div className="my-5">
                     <div className="body text-center py-3 py-5">
 
-                        <button type="button" className={`btn btn-info mx-2 px-4 fw-bold border border-white border-2 dropdown-toggle ${this.state.HourBtnState}`} data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" className={`btn fs-3 btn-info mx-2 px-4 fw-bold border border-white border-2 dropdown-toggle ${this.state.HourBtnState}`} data-bs-toggle="dropdown" aria-expanded="false">
                             {this.state.Hour !== "" ? this.state.Hour : this.state.HourText}
                         </button>
 
@@ -194,9 +194,9 @@ export default class Home extends Component {
                             <li className="dropdown-item text-white" onClick={() => { this.setState({ Hour: "12" }) }}>12 (Noon)</li>
                         </ul>
 
-                        <strong>:</strong>
+                        <strong className='fs-3 fw-bold'>:</strong>
 
-                        <button type="button" className={`btn btn-info px-4 fw-bold mx-2 border border-white border-2 dropdown-toggle ${this.state.MinBtnState}`} data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" className={`btn fs-3 btn-info px-4 fw-bold mx-2 border border-white border-2 dropdown-toggle ${this.state.MinBtnState}`} data-bs-toggle="dropdown" aria-expanded="false">
                             {this.state.Minutes !== "" ? this.state.Minutes : this.state.MinuteText}
                         </button>
 
@@ -272,7 +272,7 @@ export default class Home extends Component {
                     this.state.isAlarm &&
 
                     <div className="text-center">
-                        <div className="btn btn-danger px-4 border border-light border-2 " onClick={this.Stop}>
+                        <div className="btn btn-danger px-4 border fs-4 border-light border-2 " onClick={this.Stop}>
                             Stop Alarm <i className="fa fa-stop" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -282,7 +282,7 @@ export default class Home extends Component {
                     !this.state.AlarmSet &&
 
                     <div className="text-center">
-                        <div className={`btn btn-primary px-4 border border-light border-2 ${this.state.btnState}`} onClick={this.set}>
+                        <div className={`btn btn-primary px-4 fs-4 border border-light border-2 ${this.state.btnState}`} onClick={this.set}>
                             Set Alarm <i className="fa fa-play-circle" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -292,7 +292,7 @@ export default class Home extends Component {
                     this.state.AlarmSet && !this.state.isAlarm &&
 
                     <div className="text-center">
-                        <div className="btn btn-warning px-4 fw-bold border border-light border-2 " onClick={this.Stop}>
+                        <div className="btn btn-warning px-4 fs-4 fw-bold border border-light border-2 " onClick={this.Stop}>
                             Cancel Alarm <i className="fa fa-plus" style={{ "transform": "rotate(45deg)" }} aria-hidden="true"></i>
                         </div>
                     </div>

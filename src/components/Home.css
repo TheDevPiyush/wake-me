@@ -14,3 +14,9 @@ body {
 .dropdown-item:hover{
     background-color: red;
 }
+.dropdown-item:focus{
+    background-color: red;
+}
+.dropdown-item:active{
+    background-color: rgb(77, 8, 8);
+}

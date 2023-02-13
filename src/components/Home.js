@@ -14,6 +14,12 @@ let Sec = new Date().getSeconds().toString()
 if (Hr > 12) {
     Hr = (new Date().getHours() - 12).toString()
 }
+if (Hr <= 9) {
+    Hr = "0" + Hr
+}
+if (Min <= 9) {
+    Min = "0" + Min
+}
 
 
 let music = new Audio(sound)
@@ -24,7 +30,7 @@ export default class Home extends Component {
         super(props)
 
         this.state = {
-            time: Hr + " : " + Min + " : " + Sec,
+            time: Hr + ":" + Min,
             Hour: "",
             Minutes: "",
             isAlarm: false,
@@ -44,6 +50,17 @@ export default class Home extends Component {
                 return
             }
         })
+
+        toast.info(`Current time is : ${this.state.time}`, {
+            position: "bottom-center",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
 
         this.UptimeClock()
         setInterval(() => {
@@ -102,7 +119,7 @@ export default class Home extends Component {
         setTimeout(() => {
             this.setState({ AlarmSet: true })
             toast.info(`Alarm set for ${this.state.Hour + ":" + this.state.Minutes}`, {
-                position: "bottom-right",
+                position: "bottom-center",
                 autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
